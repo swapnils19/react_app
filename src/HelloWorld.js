@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './HelloWorld.css';
+import LanguageList from './LanguageList';
 
 class HelloWorld extends Component {
     constructor(props) {
@@ -14,7 +15,8 @@ class HelloWorld extends Component {
             <div className="HelloWorld">
                 {this.state.greeting} {this.props.name}!
                 <br />
-                <button onClick={this.frenchify}>Frenchify!</button>
+                {/* <button onClick={this.frenchify}>Frenchify!</button> */}
+                <LanguageList />
                 <br />
                 <button onClick={this.removeGreeting}>Remove</button>
             </div>

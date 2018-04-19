@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import './AddGreeter.css'
+import './AddProps.css'
 
 class AddGreeter extends Component {
     render() {
         return (
-            <div className="AddGreeter">
+            <div className="AddProps">
                 <input
                     type="text"
                     onChange={this.handleUpdate}

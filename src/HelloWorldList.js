@@ -2,12 +2,14 @@ import React, { Component } from 'react';
 import './HelloWorldList.css';
 import HelloWorld from './HelloWorld';
 import AddGreeter from './AddGreeter';
+import AddLanguage from './AddLanguage';
 
 class HelloWorldList extends Component {
     render() {
         return (
             <div className="HelloWorldList">
                 <AddGreeter addGreeting = {this.addGreeting} />
+                <AddLanguage addLanguage = {this.addLanguage} />
                 { this.renderGreetings() }
             </div>
         );
@@ -39,6 +41,10 @@ class HelloWorldList extends Component {
             return name !== removeName;
         });
         this.setState({ greetings: filteredGreetings });
+    }
+
+    addLanguage(newLanguage) {
+        // TODO add newLanguage to LanguageList.js
     }
 }
 export default HelloWorldList;
