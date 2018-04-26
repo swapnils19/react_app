@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import './AddProps.css'
+import 'bootstrap/less/bootstrap.less'
+import { Button } from 'react-bootstrap';
 
 class AddGreeter extends Component {
     render() {
@@ -11,7 +13,7 @@ class AddGreeter extends Component {
                     value={this.state.greetingName}
                 />
                 &nbsp;&nbsp;
-                <button onClick={this.addGreeting}>Add</button>
+                <Button bsStyle="primary" onClick={this.addGreeting}>Add</Button>
             </div>
         );
     }
